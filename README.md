@@ -2,7 +2,7 @@
 A bunch of scripts to make QIIMists' life easier.
 
 ## Id_to_tax map maker
-It is a simple script that makes QIIME-compatible id_to_tax maps starting from a fasta file containing the ids. 
+It is a simple script that makes QIIME-compatible id_to_tax maps starting from a fasta file containing the ids in the headers. 
 Usage:
 ```
 ./id_to_tax_mapmaker.sh [fasta file] > id_to_tax.map
