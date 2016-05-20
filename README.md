@@ -31,4 +31,4 @@ The script has been tested on the NCBI's 16SMicrobial dataset (ftp://ftp.ncbi.nl
 --id_to_taxonomy_fp id_to_tax.map
 --reference_seqs_fp 16sMicrobial.fasta
 ```
-obtaining results down to the species level.
+obtaining characterization down to the species level.
