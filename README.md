@@ -25,7 +25,7 @@ The **output** will be a tab-separated table (as required by QIIME) with the ide
 ```
 gi|444303911|ref|NR_074334.1|	Archaea;Euryarchaeota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Archaeoglobus;Archaeoglobus fulgidus;Archaeoglobus fulgidus DSM 4304
 ```
-The script has been tested on the NCBI's 16SMicrobial dataset (ftp://ftp.ncbi.nlm.nih.gov/blast/db/16SMicrobial.tar.gz) after converting it from blast_db format to fasta format(```blastdbcmd -entry all -db 16SMicrobial > 16SMicrobial.fasta```). This allowed to run QIIME's [assign_taxonomy.py](http://qiime.org/scripts/assign_taxonomy.html) using the following parameters:
+The script has been tested on the NCBI's 16SMicrobial dataset (ftp://ftp.ncbi.nlm.nih.gov/blast/db/16SMicrobial.tar.gz) after converting it from blast_db format to pseudo-fasta format - we just need the gi IDs in the headers (```blastdbcmd -db 16SMicrobial  -outfmt '>gi|%g|ref|%a|' -entry 'all' > 16SMicrobial.fasta```). This allowed to run QIIME's [assign_taxonomy.py](http://qiime.org/scripts/assign_taxonomy.html) using the following parameters:
 ```
 --assignment_method blast
 --id_to_taxonomy_fp id_to_tax.map
